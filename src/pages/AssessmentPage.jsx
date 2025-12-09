@@ -152,7 +152,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import api from "../api";
+import api, { API_BASE_URL } from "../api";
+
 
 export function AssessmentPage() {
   const { id } = useParams();
@@ -271,7 +272,7 @@ export function AssessmentPage() {
 
           {currentQuestion.image_url && (
             <img
-              src={currentQuestion.image_url}
+              src={`${API_BASE_URL}${currentQuestion.image_url}`}
               alt="Question visual"
               className="question-image"
             />

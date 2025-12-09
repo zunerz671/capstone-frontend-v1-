@@ -102,7 +102,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import api from "../api";
+import api, { API_BASE_URL } from "../api";
 
 export function LessonPage() {
   const { id } = useParams();
@@ -169,8 +169,13 @@ export function LessonPage() {
 
       {currentPage ? (
         <div className="lesson-image-wrapper">
-          <img
+          {/* <img
             src={currentPage.image_url}
+            alt={`Page ${currentIndex + 1}`}
+            className="lesson-image"
+          /> */}
+          <img
+            src={`${API_BASE_URL}${currentPage.image_url}`}
             alt={`Page ${currentIndex + 1}`}
             className="lesson-image"
           />
