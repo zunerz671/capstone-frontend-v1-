@@ -1,8 +1,8 @@
-export const API_BASE_URL = "http://localhost:3000";
 import axios from "axios";
+export const API_BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:3000" : "https://capstone-backend-v1.onrender.com"
 
 const api = axios.create({
-  baseURL: "http://localhost:3000", // change if your Rails server uses another host/port
+  baseURL: API_BASE_URL // change if your Rails server uses another host/port
 });
 
 export function setAuthToken(token) {
