@@ -287,3 +287,82 @@ textarea:focus {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 1.0);
 }
+
+/* Login / signup layout with video */
+.auth-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.auth-video {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 260px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.auth-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text overlay on video */
+.auth-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px 18px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.15),
+    transparent
+  );
+  color: white;
+}
+
+.auth-video-overlay h1 {
+  margin: 0 0 4px;
+  font-size: 1.4rem;
+}
+
+.auth-video-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Right side login panel */
+.auth-panel {
+  max-width: 380px;
+}
+
+/* Responsive: stack video + form on small screens */
+@media (max-width: 768px) {
+  .auth-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-panel {
+    max-width: none;
+  }
+}
+
+.video-mute-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
