@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background sand color -->
+  <rect width="200" height="200" fill="#f7f2e9"/>
+
+  <!-- Simple wave lines -->
+  <path d="M-20 60 Q 10 40 40 60 T 100 60 T 160 60 T 220 60" fill="none" stroke="#9ad5f4" stroke-width="3" opacity="0.7"/>
+  <path d="M-20 75 Q 10 55 40 75 T 100 75 T 160 75 T 220 75" fill="none" stroke="#6bb9f0" stroke-width="2" opacity="0.6"/>
+
+  <!-- Palm trunk -->
+  <path d="M145 120 C142 150 146 170 144 190" stroke="#b1753b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Palm leaves -->
+  <path d="M145 120 C125 110 110 105 95 100" stroke="#2ac1b5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M145 120 C165 110 180 100 195 95" stroke="#2ac1b5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M145 120 C135 95 135 80 132 65" stroke="#2ac1b5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M145 120 C155 95 160 80 170 68" stroke="#2ac1b5" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Coconuts -->
+  <circle cx="140" cy="125" r="5" fill="#8b5a2b"/>
+  <circle cx="150" cy="125" r="5" fill="#8b5a2b"/>
+
+  <!-- Small shells / pebbles -->
+  <circle cx="40" cy="150" r="3" fill="#ffb997" opacity="0.8"/>
+  <circle cx="70" cy="165" r="3" fill="#ffb997" opacity="0.8"/>
+  <circle cx="30" cy="180" r="3" fill="#ffb997" opacity="0.8"/>
+  <circle cx="90" cy="145" r="2.5" fill="#e1b382" opacity="0.8"/>
+</svg>

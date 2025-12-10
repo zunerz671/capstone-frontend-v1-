@@ -25,8 +25,19 @@ body {
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
-  background: var(--color-sand);
-  color: var(--color-gray-900);
+
+  /* Base sand color behind everything */
+  background-color: #f7f2e9;
+
+  /* Soft light spots + repeating tropical pattern */
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6) 0, transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.5) 0, transparent 55%),
+    linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
+    url("/images/tropical-pattern.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+  background-size: 600px 600px, 600px 600px, cover, 220px 220px;
+  background-blend-mode: normal, normal, lighten, normal;
 }
 
 a {
